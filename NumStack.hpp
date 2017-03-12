@@ -1,5 +1,11 @@
-#ifndef NUMSTACK_HPP_INCLUDED
-#define NUMSTACK_HPP_INCLUDED
+/*
+	Orion Davis (3003072) ord4@zips.uakron.edu
+	The University of Akron
+	Computer Science II, Prof. Will
+	ASSGN6: Numbers Stack
+*/
+#ifndef NUMSTACK_HPP
+#define NUMSTACK_HPP
 
 class NumStack
 {
@@ -25,4 +31,4 @@ public:
    bool isEmpty() const;
 };
 
-#endif // NUMSTACK_HPP_INCLUDED
+#endif 

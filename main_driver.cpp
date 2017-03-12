@@ -1,7 +1,11 @@
-// This program demonstrates the MathStack class.
+/*
+	Orion Davis (3003072) ord4@zips.uakron.edu
+	The University of Akron
+	Computer Science II, Prof. Will
+	ASSGN6: Numbers Stack
+*/
 #include <iostream>
 #include "Stack.hpp"
-
 
 int main()
 {

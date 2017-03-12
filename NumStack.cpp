@@ -1,10 +1,8 @@
 /*
-   COPYRIGHT (C) 2017 Student Name (UANET ID ) All rights reserved.
-   CSII assignment
-   Author.  Student Name
-            zippy@zips.uakron.edu
-   Version. 1.01 09.09.2017
-   Purpose: This program ...
+	Orion Davis (3003072) ord4@zips.uakron.edu
+	The University of Akron
+	Computer Science II, Prof. Will
+	ASSGN6: Numbers Stack
 */
 // Implementation file for the NumStack class
 #include <iostream>
@@ -16,7 +14,6 @@
 // This constructor creates an empty stack. The *
 // size parameter is the size of the stack.     *
 //***********************************************
-
 NumStack::NumStack(int size)
 {
    stackArray = new int[size];
@@ -27,7 +24,6 @@ NumStack::NumStack(int size)
 //***********************************************
 // Copy constructor                             *
 //***********************************************
-
 NumStack::NumStack(const NumStack &obj)
 {
    // Create the stack array.
@@ -50,7 +46,6 @@ NumStack::NumStack(const NumStack &obj)
 //***********************************************
 // Destructor                                   *
 //***********************************************
-
 NumStack::~NumStack()
 {
    delete [] stackArray;
@@ -60,7 +55,6 @@ NumStack::~NumStack()
 // Member function push pushes the argument onto  *
 // the stack.                                     *
 //*************************************************
-
 void NumStack::push(int num)
 {
    if (isFull())
@@ -79,7 +73,6 @@ void NumStack::push(int num)
 // of the stack off, and copies it into the variable *
 // passed as an argument.                            *
 //****************************************************
-
 void NumStack::pop(int &num)
 {
    if (isEmpty())
@@ -97,7 +90,6 @@ void NumStack::pop(int &num)
 // Member function isFull returns true if the stack *
 // is full, or false otherwise.                     *
 //***************************************************
-
 bool NumStack::isFull() const
 {
    bool status;
@@ -114,7 +106,6 @@ bool NumStack::isFull() const
 // Member function isEmpty returns true if the stack *
 // is empty, or false otherwise.                     *
 //****************************************************
-
 bool NumStack::isEmpty() const
 {
    bool status;
