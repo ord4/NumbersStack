@@ -7,29 +7,17 @@
 #ifndef STACK_HPP
 #define STACK_HPP
 
-#include <stack>
+#include "NumStack.hpp"
 
-template<typename T>
-using Stack = std::stack<T>;
-
-Stack{
-private:
-	T *stackArray;
-    int stackSize;
-    T top;
-
+class Stack : public NumStack
+{
 public:
-	// Constructors and destructors
-	Stack(int);
-	Stack(const Stack&);
-	~Stack();
+   // Constructor
+   Stack(int s) : NumStack(s) {}
 
-	// Operations
-	void push(T);
-	void pop(T&);
-	bool isFull() const;
-	bool isEmpty() const;
+   // MathStack operations
+   void add();
+   void sub();
 };
-
 
 #endif
