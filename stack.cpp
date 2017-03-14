@@ -93,7 +93,6 @@ void Stack::addAll(Stack &myStack){
 	while(!myStack.isEmpty()){
 		pop(num);
 		sum += num;
-		std::cout << sum << " ";
 	}
 
 	push(sum);

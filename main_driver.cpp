@@ -14,70 +14,70 @@ int main()
    // Create a MathStack object.
    Stack stack(5);
 
-   std::cout << "Pushing 1, 2, 3, 8, and 4..\n";
+   std::cout << "Pushing 1, 2, 3, 4, and 5..\n";
    stack.push(1); // Bottom of stack
    stack.push(2);
    stack.push(3);
-   stack.push(8);
-   stack.push(4); // Top of stack
+   stack.push(4);
+   stack.push(5); // Top of stack
 
    /*//Testing mult()
-   std::cout << "\nMultiplying top two should yield: 20\n"; // 5*4
+   std::cout << "Multiplying top two should yield: 20\n"; // 5*4
    stack.mult();
    stack.pop(catchVar);
    std::cout << "It yielded: " << catchVar << '\n';
 
-   std::cout << "\nMultiplying top two should yield: 6\n"; // 3*2
+   std::cout << "Multiplying top two should yield: 6\n"; // 3*2
    stack.mult();
    stack.pop(catchVar);
    std::cout << "It yielded: " << catchVar << '\n';
    */
 
    /*// Testing div()
-   std::cout << "\nDividing top two should yield: 2\n"; // 8/4
+   std::cout << "Dividing top two should yield: 2\n"; // 8/4
    stack.div();
    stack.pop(catchVar);
    std::cout << "It yielded: " << catchVar << '\n';
 
-   std::cout << "\nDividing top two should yield: 0 (integer division)\n"; // 2/3
+   std::cout << "Dividing top two should yield: 0 (integer division)\n"; // 2/3
    stack.div();
    stack.pop(catchVar);
    std::cout << "It yielded: " << catchVar << '\n';
    */
 
    /*//Testing addAll()
-   std::cout << "\nAdding all together should yield: 15\n";
+   std::cout << "Adding all together should yield: 18\n";
    stack.addAll(stack);
    stack.pop(catchVar);
    std::cout << "It yielded: " << catchVar << '\n';
 
-   /*std::cout << "Pushing 2, 4, 6, 8, and 10...\n";
-   stack.push(1); // Bottom of stack
-   stack.push(2);
-   stack.push(6);
+   std::cout << "\nPushing 2, 4, 6, 8, and 10...\n";
+   stack.push(2); // Bottom of stack
    stack.push(4);
-   stack.push(5); // Top of stack
+   stack.push(6);
+   stack.push(8);
+   stack.push(10); // Top of stack
 
-   std::cout << "\nAdding all together should yield: 30\n";
+   std::cout << "Adding all together should yield: 30\n";
    stack.addAll(stack);
    stack.pop(catchVar);
    std::cout << "It yielded: " << catchVar << '\n';
    */
 
    /*//Testing multAll()
-   std::cout << "\nMultiplying all together should yield: 120\n";
+   std::cout << "Multiplying all together should yield: 120\n";
    stack.multAll(stack);
    stack.pop(catchVar);
    std::cout << "It yielded: " << catchVar << '\n';
 
-   std::cout << "Pushing 2, 4, 6, 8, and 10...\n";
-   stack.push(1); // Bottom of stack
-   stack.push(2);
-   stack.push(6);
+   std::cout << "\nPushing 2, 4, 6, 8, and 10...\n";
+   stack.push(2); // Bottom of stack
    stack.push(4);
-   stack.push(5); // Top of stack
+   stack.push(6);
+   stack.push(8);
+   stack.push(10); // Top of stack
 
-   std::cout << "\nMultiplying all together should yield: 3840\n";
+   std::cout << "Multiplying all together should yield: 3840\n";
    stack.multAll(stack);
    stack.pop(catchVar);
    std::cout << "It yielded: " << catchVar << '\n';
