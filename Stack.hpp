@@ -9,8 +9,7 @@
 
 #include "NumStack.hpp"
 
-class Stack : public NumStack
-{
+class Stack : public NumStack{
 public:
    // Constructor
    Stack(int s) : NumStack(s) {}
@@ -18,6 +17,10 @@ public:
    // MathStack operations
    void add();
    void sub();
+   void mult();
+   void div();
+   void addAll(Stack&);
+   void multAll(Stack&);
 };
 
 #endif

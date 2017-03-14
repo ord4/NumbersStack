@@ -1,8 +1,7 @@
 #ifndef NUMSTACK_HPP_INCLUDED
 #define NUMSTACK_HPP_INCLUDED
 
-class NumStack
-{
+class NumStack{
 private:
    int *stackArray;  // Pointer to the stack array
    int stackSize;    // The stack size
