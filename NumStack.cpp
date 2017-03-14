@@ -19,7 +19,7 @@
 
 NumStack::NumStack(int size)
 {
-   stackArray = new int[size];
+   stackArray = new T[size];
    stackSize = size;
    top = -1;
 }
@@ -32,7 +32,7 @@ NumStack::NumStack(const NumStack &obj)
 {
    // Create the stack array.
    if (obj.stackSize > 0)
-      stackArray = new int[obj.stackSize];
+      stackArray = new T[obj.stackSize];
    else
       stackArray = nullptr;
 
@@ -61,7 +61,7 @@ NumStack::~NumStack()
 // the stack.                                     *
 //*************************************************
 
-void NumStack::push(int num)
+void NumStack::push(T num)
 {
    if (isFull())
    {
@@ -80,7 +80,7 @@ void NumStack::push(int num)
 // passed as an argument.                            *
 //****************************************************
 
-void NumStack::pop(int &num)
+void NumStack::pop(T &num)
 {
    if (isEmpty())
    {
