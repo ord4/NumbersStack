@@ -17,9 +17,9 @@
 // size parameter is the size of the stack.     *
 //***********************************************
 
-NumStack::NumStack(int size)
+NumStack<T>::NumStack(int size)
 {
-   stackArray = new int[size];
+   stackArray = new T[size];
    stackSize = size;
    top = -1;
 }
@@ -28,7 +28,7 @@ NumStack::NumStack(int size)
 // Copy constructor                             *
 //***********************************************
 
-NumStack::NumStack(const NumStack &obj)
+NumStack<T>::NumStack(const NumStack &obj)
 {
    // Create the stack array.
    if (obj.stackSize > 0)
@@ -51,7 +51,7 @@ NumStack::NumStack(const NumStack &obj)
 // Destructor                                   *
 //***********************************************
 
-NumStack::~NumStack()
+NumStack<T>::~NumStack()
 {
    delete [] stackArray;
 }
@@ -61,7 +61,7 @@ NumStack::~NumStack()
 // the stack.                                     *
 //*************************************************
 
-void NumStack::push(int num)
+void NumStack<T>::push(T num)
 {
    if (isFull())
    {
@@ -80,7 +80,7 @@ void NumStack::push(int num)
 // passed as an argument.                            *
 //****************************************************
 
-void NumStack::pop(int &num)
+void NumStack<T>::pop(T &num)
 {
    if (isEmpty())
    {
@@ -98,7 +98,7 @@ void NumStack::pop(int &num)
 // is full, or false otherwise.                     *
 //***************************************************
 
-bool NumStack::isFull() const
+bool NumStack<T>::isFull() const
 {
    bool status;
 
@@ -115,7 +115,7 @@ bool NumStack::isFull() const
 // is empty, or false otherwise.                     *
 //****************************************************
 
-bool NumStack::isEmpty() const
+bool NumStack<T>::isEmpty() const
 {
    bool status;
 

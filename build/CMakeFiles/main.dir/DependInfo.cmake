@@ -4,9 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/orion/Documents/code/cs2/NumbersStack/NumStack.cpp" "/home/orion/Documents/code/cs2/NumbersStack/build/CMakeFiles/main.dir/NumStack.cpp.o"
   "/home/orion/Documents/code/cs2/NumbersStack/main_driver.cpp" "/home/orion/Documents/code/cs2/NumbersStack/build/CMakeFiles/main.dir/main_driver.cpp.o"
-  "/home/orion/Documents/code/cs2/NumbersStack/stack.cpp" "/home/orion/Documents/code/cs2/NumbersStack/build/CMakeFiles/main.dir/stack.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

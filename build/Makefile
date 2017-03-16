@@ -123,33 +123,6 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-NumStack.o: NumStack.cpp.o
-
-.PHONY : NumStack.o
-
-# target to build an object file
-NumStack.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/NumStack.cpp.o
-.PHONY : NumStack.cpp.o
-
-NumStack.i: NumStack.cpp.i
-
-.PHONY : NumStack.i
-
-# target to preprocess a source file
-NumStack.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/NumStack.cpp.i
-.PHONY : NumStack.cpp.i
-
-NumStack.s: NumStack.cpp.s
-
-.PHONY : NumStack.s
-
-# target to generate assembly for a file
-NumStack.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/NumStack.cpp.s
-.PHONY : NumStack.cpp.s
-
 main_driver.o: main_driver.cpp.o
 
 .PHONY : main_driver.o
@@ -177,33 +150,6 @@ main_driver.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main_driver.cpp.s
 .PHONY : main_driver.cpp.s
 
-stack.o: stack.cpp.o
-
-.PHONY : stack.o
-
-# target to build an object file
-stack.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/stack.cpp.o
-.PHONY : stack.cpp.o
-
-stack.i: stack.cpp.i
-
-.PHONY : stack.i
-
-# target to preprocess a source file
-stack.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/stack.cpp.i
-.PHONY : stack.cpp.i
-
-stack.s: stack.cpp.s
-
-.PHONY : stack.s
-
-# target to generate assembly for a file
-stack.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/stack.cpp.s
-.PHONY : stack.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,15 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main"
-	@echo "... NumStack.o"
-	@echo "... NumStack.i"
-	@echo "... NumStack.s"
 	@echo "... main_driver.o"
 	@echo "... main_driver.i"
 	@echo "... main_driver.s"
-	@echo "... stack.o"
-	@echo "... stack.i"
-	@echo "... stack.s"
 .PHONY : help
 
 

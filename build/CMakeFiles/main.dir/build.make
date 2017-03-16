@@ -57,57 +57,9 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
-CMakeFiles/main.dir/stack.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/stack.cpp.o: ../stack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orion/Documents/code/cs2/NumbersStack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/stack.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/stack.cpp.o -c /home/orion/Documents/code/cs2/NumbersStack/stack.cpp
-
-CMakeFiles/main.dir/stack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/stack.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orion/Documents/code/cs2/NumbersStack/stack.cpp > CMakeFiles/main.dir/stack.cpp.i
-
-CMakeFiles/main.dir/stack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/stack.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orion/Documents/code/cs2/NumbersStack/stack.cpp -o CMakeFiles/main.dir/stack.cpp.s
-
-CMakeFiles/main.dir/stack.cpp.o.requires:
-
-.PHONY : CMakeFiles/main.dir/stack.cpp.o.requires
-
-CMakeFiles/main.dir/stack.cpp.o.provides: CMakeFiles/main.dir/stack.cpp.o.requires
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/stack.cpp.o.provides.build
-.PHONY : CMakeFiles/main.dir/stack.cpp.o.provides
-
-CMakeFiles/main.dir/stack.cpp.o.provides.build: CMakeFiles/main.dir/stack.cpp.o
-
-
-CMakeFiles/main.dir/NumStack.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/NumStack.cpp.o: ../NumStack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orion/Documents/code/cs2/NumbersStack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/NumStack.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/NumStack.cpp.o -c /home/orion/Documents/code/cs2/NumbersStack/NumStack.cpp
-
-CMakeFiles/main.dir/NumStack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/NumStack.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orion/Documents/code/cs2/NumbersStack/NumStack.cpp > CMakeFiles/main.dir/NumStack.cpp.i
-
-CMakeFiles/main.dir/NumStack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/NumStack.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orion/Documents/code/cs2/NumbersStack/NumStack.cpp -o CMakeFiles/main.dir/NumStack.cpp.s
-
-CMakeFiles/main.dir/NumStack.cpp.o.requires:
-
-.PHONY : CMakeFiles/main.dir/NumStack.cpp.o.requires
-
-CMakeFiles/main.dir/NumStack.cpp.o.provides: CMakeFiles/main.dir/NumStack.cpp.o.requires
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/NumStack.cpp.o.provides.build
-.PHONY : CMakeFiles/main.dir/NumStack.cpp.o.provides
-
-CMakeFiles/main.dir/NumStack.cpp.o.provides.build: CMakeFiles/main.dir/NumStack.cpp.o
-
-
 CMakeFiles/main.dir/main_driver.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main_driver.cpp.o: ../main_driver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orion/Documents/code/cs2/NumbersStack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/main_driver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orion/Documents/code/cs2/NumbersStack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main_driver.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main_driver.cpp.o -c /home/orion/Documents/code/cs2/NumbersStack/main_driver.cpp
 
 CMakeFiles/main.dir/main_driver.cpp.i: cmake_force
@@ -131,19 +83,15 @@ CMakeFiles/main.dir/main_driver.cpp.o.provides.build: CMakeFiles/main.dir/main_d
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/stack.cpp.o" \
-"CMakeFiles/main.dir/NumStack.cpp.o" \
 "CMakeFiles/main.dir/main_driver.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-main: CMakeFiles/main.dir/stack.cpp.o
-main: CMakeFiles/main.dir/NumStack.cpp.o
 main: CMakeFiles/main.dir/main_driver.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/orion/Documents/code/cs2/NumbersStack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/orion/Documents/code/cs2/NumbersStack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -151,8 +99,6 @@ CMakeFiles/main.dir/build: main
 
 .PHONY : CMakeFiles/main.dir/build
 
-CMakeFiles/main.dir/requires: CMakeFiles/main.dir/stack.cpp.o.requires
-CMakeFiles/main.dir/requires: CMakeFiles/main.dir/NumStack.cpp.o.requires
 CMakeFiles/main.dir/requires: CMakeFiles/main.dir/main_driver.cpp.o.requires
 
 .PHONY : CMakeFiles/main.dir/requires

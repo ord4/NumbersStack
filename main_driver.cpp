@@ -12,7 +12,7 @@ int main()
    int catchVar;  // To hold values popped off the stack
 
    // Create a MathStack object.
-   Stack stack(5);
+   Stack<int> stack(5);
 
    /*std::cout << "Pushing 1.5, 2.2, 3.3, 4.7...\n";
    stack.push(1.5);
@@ -39,7 +39,7 @@ int main()
    stack.mult();
    stack.pop(catchVar);
    std::cout << "It yielded: " << catchVar << '\n';
-   
+
 
    /*// Testing div()
    std::cout << "Dividing top two should yield: 2\n"; // 8/4

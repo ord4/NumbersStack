@@ -17,7 +17,7 @@ project(main CXX)
 
 # Declare that we want to build an executable program named "hello".
 # This will produce an executable program with that
-add_executable(main stack.cpp NumStack.cpp main_driver.cpp)
+add_executable(main main_driver.cpp)
 
 
 # DO NOT REMOVE OR MODIFY THIS MACRO.

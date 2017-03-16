@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/orion/Documents/code/cs2/NumbersStack/NumStack.cpp
-iostream
--
-NumStack.hpp
-/home/orion/Documents/code/cs2/NumbersStack/NumStack.hpp
-
 /home/orion/Documents/code/cs2/NumbersStack/NumStack.hpp
 
 /home/orion/Documents/code/cs2/NumbersStack/Stack.hpp
@@ -19,12 +13,6 @@ NumStack.hpp
 /home/orion/Documents/code/cs2/NumbersStack/NumStack.hpp
 
 /home/orion/Documents/code/cs2/NumbersStack/main_driver.cpp
-iostream
--
-Stack.hpp
-/home/orion/Documents/code/cs2/NumbersStack/Stack.hpp
-
-/home/orion/Documents/code/cs2/NumbersStack/stack.cpp
 iostream
 -
 Stack.hpp

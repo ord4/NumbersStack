@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/main.dir/stack.cpp.o"
-  "CMakeFiles/main.dir/NumStack.cpp.o"
   "CMakeFiles/main.dir/main_driver.cpp.o"
   "main.pdb"
   "main"
