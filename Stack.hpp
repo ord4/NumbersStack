@@ -35,7 +35,7 @@ public:
 * PRE:  None                                                               *
 * POST: Top two values popped from stack and new sum placed on top         *
 ***************************************************************************/
-Template<class T> void Stack::add(){
+template<class T> void Stack<T>::add(){
    T num, sum;
 
    // Pop the first two values off the stack.
@@ -55,7 +55,7 @@ Template<class T> void Stack::add(){
 * PRE:  None                                                                *
 * Post: Top two values popped from stack and their difference pushed on top *
 ****************************************************************************/
-Template<class T> void Stack::sub(){
+template<class T> void Stack<T>::sub(){
    T num, diff;
 
    // Pop the first two values off the stack.
@@ -75,7 +75,7 @@ Template<class T> void Stack::sub(){
 * PRE:  None                                                          *
 * POST: Top two values popped and their product pushed on top         *
 **********************************************************************/
-Template<class T>void Stack::mult(){
+template<class T>void Stack<T>::mult(){
 	T num, prod;
 
 	pop(prod);
@@ -92,7 +92,7 @@ Template<class T>void Stack::mult(){
 * PRE:  None                                                             *
 * POST: Top two values popped and their quotient pushed on top           *
 *************************************************************************/
-Template<class T> void Stack::div(){
+template<class T> void Stack<T>::div(){
 	T num, quot;
 
 	pop(num);
@@ -109,7 +109,7 @@ Template<class T> void Stack::div(){
 * PRE: A stack                                                          *
 * POST: All numbers popped and replaced by their total sum pushed       *
 ************************************************************************/
-Template<class T> void Stack::addAll(Stack &myStack){
+template<class T> void Stack<T>::addAll(Stack &myStack){
 	T num;
 	T sum = 0;
 
@@ -121,7 +121,7 @@ Template<class T> void Stack::addAll(Stack &myStack){
 	push(sum);
 }
 
-Template<class T> void Stack::multAll(Stack &myStack){
+template<class T> void Stack<T>::multAll(Stack &myStack){
 	T num, prod;
 	pop(prod);
 

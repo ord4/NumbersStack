@@ -40,7 +40,7 @@ public:
 // size parameter is the size of the stack.     *
 //***********************************************
 
-Template<class T> NumStack<T>::NumStack(int size)
+template<class T> NumStack<T>::NumStack(int size)
 {
    stackArray = new T[size];
    stackSize = size;
@@ -51,7 +51,7 @@ Template<class T> NumStack<T>::NumStack(int size)
 // Copy constructor                             *
 //***********************************************
 
-Template<class T> NumStack<T>::NumStack(const NumStack &obj)
+template<class T> NumStack<T>::NumStack(const NumStack &obj)
 {
    // Create the stack array.
    if (obj.stackSize > 0)
@@ -74,7 +74,7 @@ Template<class T> NumStack<T>::NumStack(const NumStack &obj)
 // Destructor                                   *
 //***********************************************
 
-Template<class T> NumStack<T>::~NumStack()
+template<class T> NumStack<T>::~NumStack()
 {
    delete [] stackArray;
 }
@@ -84,7 +84,7 @@ Template<class T> NumStack<T>::~NumStack()
 // the stack.                                     *
 //*************************************************
 
-Template<class T> void NumStack<T>::push(T num)
+template<class T> void NumStack<T>::push(T num)
 {
    if (isFull())
    {
@@ -103,7 +103,7 @@ Template<class T> void NumStack<T>::push(T num)
 // passed as an argument.                            *
 //****************************************************
 
-Template<class T> void NumStack<T>::pop(T &num)
+template<class T> void NumStack<T>::pop(T &num)
 {
    if (isEmpty())
    {
@@ -121,7 +121,7 @@ Template<class T> void NumStack<T>::pop(T &num)
 // is full, or false otherwise.                     *
 //***************************************************
 
-Template<class T> bool NumStack<T>::isFull() const
+template<class T> bool NumStack<T>::isFull() const
 {
    bool status;
 
@@ -138,7 +138,7 @@ Template<class T> bool NumStack<T>::isFull() const
 // is empty, or false otherwise.                     *
 //****************************************************
 
-Template<class T> bool NumStack<T>::isEmpty() const
+template<class T> bool NumStack<T>::isEmpty() const
 {
    bool status;
 
