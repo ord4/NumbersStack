@@ -9,27 +9,27 @@
 
 int main()
 {
-   T catchVar;  // To hold values popped off the stack
+   int catchVar;  // To hold values popped off the stack
 
    // Create a MathStack object.
    Stack stack(5);
 
-   std::cout << "Pushing 1.5, 2.2, 3.3, 4.7...\n";
+   /*std::cout << "Pushing 1.5, 2.2, 3.3, 4.7...\n";
    stack.push(1.5);
    stack.push(2.2);
    stack.push(3.3);
-   stack.push(4.7);
+   stack.push(4.7);*/
 
-   /*
+
    std::cout << "Pushing 1, 2, 3, 4, and 5..\n";
    stack.push(1); // Bottom of stack
    stack.push(2);
    stack.push(3);
    stack.push(4);
    stack.push(5); // Top of stack
-   */
 
-   /*//Testing mult()
+
+   //Testing mult()
    std::cout << "Multiplying top two should yield: 20\n"; // 5*4
    stack.mult();
    stack.pop(catchVar);
@@ -39,7 +39,7 @@ int main()
    stack.mult();
    stack.pop(catchVar);
    std::cout << "It yielded: " << catchVar << '\n';
-   */
+   
 
    /*// Testing div()
    std::cout << "Dividing top two should yield: 2\n"; // 8/4

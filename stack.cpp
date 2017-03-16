@@ -13,7 +13,7 @@
 * POST: Top two values popped from stack and new sum placed on top         *
 ***************************************************************************/
 void Stack::add(){
-   T num, sum;
+   int num, sum;
 
    // Pop the first two values off the stack.
    pop(sum);
@@ -33,7 +33,7 @@ void Stack::add(){
 * Post: Top two values popped from stack and their difference pushed on top *
 ****************************************************************************/
 void Stack::sub(){
-   T num, diff;
+   int num, diff;
 
    // Pop the first two values off the stack.
    pop(diff);
@@ -53,7 +53,7 @@ void Stack::sub(){
 * POST: Top two values popped and their product pushed on top         *
 **********************************************************************/
 void Stack::mult(){
-	T num, prod;
+	int num, prod;
 
 	pop(prod);
 	pop(num);
@@ -70,7 +70,7 @@ void Stack::mult(){
 * POST: Top two values popped and their quotient pushed on top           *
 *************************************************************************/
 void Stack::div(){
-	T num, quot;
+	int num, quot;
 
 	pop(num);
 	pop(quot);
@@ -87,8 +87,8 @@ void Stack::div(){
 * POST: All numbers popped and replaced by their total sum pushed       *
 ************************************************************************/
 void Stack::addAll(Stack &myStack){
-	T num;
-	T sum = 0;
+	int num;
+	int sum = 0;
 
 	while(!myStack.isEmpty()){
 		pop(num);
@@ -99,7 +99,7 @@ void Stack::addAll(Stack &myStack){
 }
 
 void Stack::multAll(Stack &myStack){
-	T num, prod;
+	int num, prod;
 	pop(prod);
 
 	while(!myStack.isEmpty()){

@@ -1,16 +1,15 @@
 #ifndef NUMSTACK_HPP_INCLUDED
 #define NUMSTACK_HPP_INCLUDED
 
-template<class T>
 class NumStack{
 private:
-   T *stackArray;    // Pointer to the stack array
+   int *stackArray;    // Pointer to the stack array
    int stackSize;    // The stack size
    int top;          // Indicates the top of the stack
 
 public:
    // Constructor
-   NumStack(T);
+   NumStack(int);
 
    // Copy constructor
    NumStack(const NumStack &);
@@ -19,8 +18,8 @@ public:
    ~NumStack();
 
    // Stack operations
-   void push(T);
-   void pop(T &);
+   void push(int);
+   void pop(int &);
    bool isFull() const;
    bool isEmpty() const;
 };

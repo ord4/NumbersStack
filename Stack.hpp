@@ -12,7 +12,7 @@
 class Stack : public NumStack{
 public:
    // Constructor
-   Stack(T s) : NumStack(s) {}
+   Stack(int s) : NumStack(s) {}
 
    // MathStack operations
    void add();
