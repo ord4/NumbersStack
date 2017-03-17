@@ -4,6 +4,7 @@
 	Computer Science II, Prof. Will
 	ASSGN6: Numbers Stack
 */
+/*
 #include <iostream> // For testing purposes
 #include "NumStack.hpp"
 
@@ -12,7 +13,7 @@
 * PRE:  None                                                               *
 * POST: Top two values popped from stack and new sum placed on top         *
 ***************************************************************************/
-void Stack::add(){
+/*void Stack::add(){
    T num, sum;
 
    // Pop the first two values off the stack.
@@ -24,7 +25,7 @@ void Stack::add(){
 
    // Push sum back onto the stack.
    push(sum);
-}
+}*/
 
 /****************************************************************************
 * This function will subtract the top two items and replace them with their *
@@ -32,7 +33,7 @@ void Stack::add(){
 * PRE:  None                                                                *
 * Post: Top two values popped from stack and their difference pushed on top *
 ****************************************************************************/
-void Stack::sub(){
+/*void Stack::sub(){
    T num, diff;
 
    // Pop the first two values off the stack.
@@ -44,7 +45,7 @@ void Stack::sub(){
 
    // Push diff back onto the stack.
    push(diff);
-}
+}*/
 
 /**********************************************************************
 * This function will mutliple the top two items and replace them with *
@@ -52,7 +53,7 @@ void Stack::sub(){
 * PRE:  None                                                          *
 * POST: Top two values popped and their product pushed on top         *
 **********************************************************************/
-void Stack::mult(){
+/*void Stack::mult(){
 	T num, prod;
 
 	pop(prod);
@@ -61,7 +62,7 @@ void Stack::mult(){
 	prod *= num;
 
 	push(prod);
-}
+}*/
 
 /*************************************************************************
 * This function will divide the second number popped by the first number *
@@ -69,7 +70,7 @@ void Stack::mult(){
 * PRE:  None                                                             *
 * POST: Top two values popped and their quotient pushed on top           *
 *************************************************************************/
-void Stack::div(){
+/*void Stack::div(){
 	T num, quot;
 
 	pop(num);
@@ -78,7 +79,7 @@ void Stack::div(){
 	quot /= num;
 
 	push(quot);
-}
+}*/
 
 /************************************************************************
 * This function will one by one pop all of the numbers off of the stack *
@@ -86,7 +87,7 @@ void Stack::div(){
 * PRE: A stack                                                          *
 * POST: All numbers popped and replaced by their total sum pushed       *
 ************************************************************************/
-void Stack::addAll(Stack &myStack){
+/*void Stack::addAll(Stack &myStack){
 	T num;
 	T sum = 0;
 
@@ -108,4 +109,4 @@ void Stack::multAll(Stack &myStack){
 	}
 
 	push(prod);
-}
+}*/

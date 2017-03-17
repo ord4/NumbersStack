@@ -1,6 +1,8 @@
 #ifndef NUMSTACK_HPP_INCLUDED
 #define NUMSTACK_HPP_INCLUDED
 
+#include <iostream>
+
 template<class T> class NumStack{
 private:
    T *stackArray;    // Pointer to the stack array of type T
@@ -40,7 +42,8 @@ public:
 // size parameter is the size of the stack.     *
 //***********************************************
 
-template<class T> NumStack<T>::NumStack(int size)
+template <class T>
+NumStack<T>::NumStack(int size)
 {
    stackArray = new T[size];
    stackSize = size;
@@ -51,11 +54,12 @@ template<class T> NumStack<T>::NumStack(int size)
 // Copy constructor                             *
 //***********************************************
 
-template<class T> NumStack<T>::NumStack(const NumStack &obj)
+template <class T>
+NumStack<T>::NumStack(const NumStack &obj)
 {
    // Create the stack array.
    if (obj.stackSize > 0)
-      stackArray = new int[obj.stackSize];
+      stackArray = new T[obj.stackSize];
    else
       stackArray = nullptr;
 
@@ -74,7 +78,8 @@ template<class T> NumStack<T>::NumStack(const NumStack &obj)
 // Destructor                                   *
 //***********************************************
 
-template<class T> NumStack<T>::~NumStack()
+template <class T>
+NumStack<T>::~NumStack()
 {
    delete [] stackArray;
 }
@@ -84,17 +89,18 @@ template<class T> NumStack<T>::~NumStack()
 // the stack.                                     *
 //*************************************************
 
-template<class T> void NumStack<T>::push(T num)
+template <class T>
+void NumStack<T>::push(T num)
 {
-   if (isFull())
-   {
-      std::cout << "The stack is full.\n";
-   }
-   else
-   {
-      top++;
-      stackArray[top] = num;
-   }
+    if (isFull())
+    {
+        std::cout << "The stack is full.\n";
+    }
+    else
+    {
+        top++;
+        stackArray[top] = num;
+    }
 }
 
 //****************************************************
@@ -103,17 +109,18 @@ template<class T> void NumStack<T>::push(T num)
 // passed as an argument.                            *
 //****************************************************
 
-template<class T> void NumStack<T>::pop(T &num)
+template <class T>
+void NumStack<T>::pop(T &num)
 {
-   if (isEmpty())
-   {
-      std::cout << "The stack is empty.\n";
-   }
-   else
-   {
-      num = stackArray[top];
-      top--;
-   }
+    if (isEmpty())
+    {
+        std::cout << "The stack is empty.\n";
+    }
+    else
+    {
+        num = stackArray[top];
+        top--;
+    }
 }
 
 //***************************************************
@@ -121,7 +128,8 @@ template<class T> void NumStack<T>::pop(T &num)
 // is full, or false otherwise.                     *
 //***************************************************
 
-template<class T> bool NumStack<T>::isFull() const
+template<class T>
+bool NumStack<T>::isFull() const
 {
    bool status;
 
@@ -138,7 +146,8 @@ template<class T> bool NumStack<T>::isFull() const
 // is empty, or false otherwise.                     *
 //****************************************************
 
-template<class T> bool NumStack<T>::isEmpty() const
+template<class T>
+bool NumStack<T>::isEmpty() const
 {
    bool status;
 

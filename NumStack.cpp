@@ -5,7 +5,7 @@
             zippy@zips.uakron.edu
    Version. 1.01 09.09.2017
    Purpose: This program ...
-*/
+
 // Implementation file for the NumStack class
 #include <iostream>
 #include "NumStack.hpp"
@@ -126,3 +126,4 @@ bool NumStack<T>::isEmpty() const
 
    return status;
 }
+*/

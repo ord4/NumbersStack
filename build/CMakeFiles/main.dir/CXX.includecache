@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 /home/orion/Documents/code/cs2/NumbersStack/NumStack.hpp
+iostream
+-
 
 /home/orion/Documents/code/cs2/NumbersStack/Stack.hpp
 NumStack.hpp

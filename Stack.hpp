@@ -9,10 +9,11 @@
 
 #include "NumStack.hpp"
 
-class Stack : public NumStack{
+template <class T>
+class Stack : public NumStack<T>{
 public:
    // Constructor
-   Stack(int s) : NumStack(s) {}
+   Stack(int s) : NumStack<T>(s) {}
 
    // MathStack operations
    void add();
@@ -35,7 +36,8 @@ public:
 * PRE:  None                                                               *
 * POST: Top two values popped from stack and new sum placed on top         *
 ***************************************************************************/
-template<class T> void Stack<T>::add(){
+template<class T>
+void Stack<T>::add(){
    T num, sum;
 
    // Pop the first two values off the stack.
@@ -55,7 +57,8 @@ template<class T> void Stack<T>::add(){
 * PRE:  None                                                                *
 * Post: Top two values popped from stack and their difference pushed on top *
 ****************************************************************************/
-template<class T> void Stack<T>::sub(){
+template<class T>
+void Stack<T>::sub(){
    T num, diff;
 
    // Pop the first two values off the stack.
@@ -75,15 +78,17 @@ template<class T> void Stack<T>::sub(){
 * PRE:  None                                                          *
 * POST: Top two values popped and their product pushed on top         *
 **********************************************************************/
-template<class T>void Stack<T>::mult(){
-	T num, prod;
+template<class T>
+void Stack<T>::mult(){
+	T num;
+	T prod;
 
-	pop(prod);
-	pop(num);
+	this->pop(prod);
+	this->pop(num);
 
 	prod *= num;
 
-	push(prod);
+	this->push(prod);
 }
 
 /*************************************************************************
@@ -92,7 +97,8 @@ template<class T>void Stack<T>::mult(){
 * PRE:  None                                                             *
 * POST: Top two values popped and their quotient pushed on top           *
 *************************************************************************/
-template<class T> void Stack<T>::div(){
+template<class T>
+void Stack<T>::div(){
 	T num, quot;
 
 	pop(num);
@@ -109,7 +115,8 @@ template<class T> void Stack<T>::div(){
 * PRE: A stack                                                          *
 * POST: All numbers popped and replaced by their total sum pushed       *
 ************************************************************************/
-template<class T> void Stack<T>::addAll(Stack &myStack){
+template<class T>
+void Stack<T>::addAll(Stack &myStack){
 	T num;
 	T sum = 0;
 
@@ -121,7 +128,8 @@ template<class T> void Stack<T>::addAll(Stack &myStack){
 	push(sum);
 }
 
-template<class T> void Stack<T>::multAll(Stack &myStack){
+template<class T>
+void Stack<T>::multAll(Stack &myStack){
 	T num, prod;
 	pop(prod);
 
